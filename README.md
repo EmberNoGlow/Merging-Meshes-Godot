@@ -11,7 +11,7 @@ Meshes are combined by merging MeshInstance3D using SurfaceTool (append_from met
 
 ## Usage
 
-1.  Download and enable the addon from the Addon Manager.
+1.  Download and enable the addon.
 2.  Add a `MergingMeshes` node to your scene.
 3.  In the Inspector panel, add your `MeshInstance3D` nodes to the `meshes` parameter.
 4.  Optional: Assign a `Material3D` to the `GeneralMaterial` parameter to set the material for the merged mesh.
