@@ -17,6 +17,9 @@ Meshes are combined by merging MeshInstance3D using SurfaceTool (append_from met
 4.  Optional: Assign a `Material3D` to the `GeneralMaterial` parameter to set the material for the merged mesh.
 5.  Recommended: Keep the `HideSource` parameter enabled to automatically hide the original `MeshInstance3D` nodes.
 
+## About the Developer
+
+This mini-add-on is a component of a larger add-on I'm developing for Godot 4 (I will upload it to github in the **near future**). Check out my [profile](https://github.com/EmberNoGlow) for more!
 
 ## Did you like the high FPS?
-Consider **starring** this repository to make it easier for others to **find it**. Also, check out my [profile](https://github.com/EmberNoGlow) for **more Godot projects**!
+Consider **starring** this repository to make it easier for others to **find it**.
