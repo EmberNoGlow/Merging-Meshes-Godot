@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=3 uid="uid://6sksuja07oif"]
+
+[ext_resource type="Script" uid="uid://bstcr1xornsa2" path="res://addons/mergingmeshes/MergingMeshes.gd" id="1_yqqkq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_0xm2m"]
+sky_material = SubResource("ProceduralSkyMaterial_ig7tw")
+
+[sub_resource type="Environment" id="Environment_h2yge"]
+background_mode = 2
+sky = SubResource("Sky_0xm2m")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yqqkq"]
+albedo_color = Color(1, 0.286275, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0xm2m"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_h2yge"]
+
+[sub_resource type="PrismMesh" id="PrismMesh_1bvp3"]
+
+[sub_resource type="TorusMesh" id="TorusMesh_lquwl"]
+inner_radius = 0.325
+outer_radius = 0.625
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_h2yge")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(-0.656059, -0.542893, -0.524265, 0, -0.694658, 0.71934, -0.75471, 0.471929, 0.455737, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="WorldEnvironment"]
+transform = Transform3D(0.842001, -0.338756, 0.419856, 0, 0.778266, 0.627935, -0.539476, -0.528722, 0.655301, 1.0804, 1.94538, 1.90224)
+
+[node name="MegingMeshes" type="MeshInstance3D" parent="." node_paths=PackedStringArray("meshes")]
+script = ExtResource("1_yqqkq")
+meshes = [NodePath("../MeshInstance3D"), NodePath("../MeshInstance3D2"), NodePath("../MeshInstance3D3"), NodePath("../MeshInstance3D4"), NodePath("../MeshInstance3D5")]
+GeneralMaterial = SubResource("StandardMaterial3D_yqqkq")
+metadata/_custom_type_script = "uid://bstcr1xornsa2"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14852, 0, 0)
+mesh = SubResource("BoxMesh_ig7tw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.566937, 0, 0)
+mesh = SubResource("CapsuleMesh_0xm2m")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.198673, 0.68605, -1.0165)
+mesh = SubResource("SphereMesh_h2yge")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.63131, 0.68605, -1.60987)
+mesh = SubResource("PrismMesh_1bvp3")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.347708, -0.965097, 0.899758)
+mesh = SubResource("TorusMesh_lquwl")
