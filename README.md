@@ -25,3 +25,5 @@ This mini-add-on is a component of a larger add-on I'm developing for Godot 4 (I
 Consider **starring** this repository to make it easier for others to **find it**.
 
 Article on **[Dev.to](https://dev.to/embernoglow/optimize-your-godot-4-scenes-with-merging-meshes-4eib)**.
+
+Get on **[Asset Library](https://godotengine.org/asset-library/asset/4538)**.
