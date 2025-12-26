@@ -1,5 +1,5 @@
 # Merging Meshes Godot
-Optimize your 3d scenes with Merging Meshes.
+Optimize your 3d scenes with Merging Meshes. This mini-addon is the basis of **my new [powerful addon](https://github.com/EmberNoGlow/Godot-SceneBuilder)**.
 
 
 
@@ -19,7 +19,7 @@ Meshes are combined by merging MeshInstance3D using SurfaceTool (append_from met
 
 ## About the Developer
 
-This mini-add-on is a component of a larger add-on I'm developing for Godot 4 (I will upload it to github in the **near future**). Check out my [profile](https://github.com/EmberNoGlow) to find more projects!
+This mini-add-on is a component of a [larger add-on](https://github.com/EmberNoGlow/Godot-SceneBuilder) I'm developing for Godot 4 (I will upload it to github in the **near future**). Check out my [profile](https://github.com/EmberNoGlow) to find more projects!
 
 ## Did you like the high FPS?
 Consider **starring** this repository to make it easier for others to **find it**.
