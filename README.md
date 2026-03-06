@@ -26,6 +26,10 @@ Meshes are combined by merging MeshInstance3D using SurfaceTool (append_from met
 
 This mini-add-on is a component of a [larger add-on](https://github.com/EmberNoGlow/Godot-SceneBuilder). Check out my [profile](https://github.com/EmberNoGlow) to find more projects!
 
+## Screenshot
+<img src="addons/mergingmeshes/Preview.png" width="50%"/>
+
+
 ## Did you like the high FPS?
 Consider **starring** this repository to make it easier for others to **find it**.
 
