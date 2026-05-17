@@ -13,6 +13,7 @@ Meshes are combined by merging MeshInstance3D using SurfaceTool (append_from met
 1. UV and material support.
 2. Clear and minimal code.
 3. Convenient API - you can use this code in your tools!
+4. Works in the editor!
 
 ## Usage
 
@@ -20,7 +21,8 @@ Meshes are combined by merging MeshInstance3D using SurfaceTool (append_from met
 2.  Add a `MergingMeshes` node to your scene.
 3.  In the Inspector panel, add your `MeshInstance3D` nodes to the `meshes` parameter.
 4.  Optional: Assign a `Material3D` to the `GeneralMaterial` parameter to set the material for the merged mesh or use **Original mesh materials**.
-5.  Recommended: Keep the `HideSource` parameter enabled to automatically hide the original `MeshInstance3D` nodes.
+5. Editor tools are available - you can merge meshes directly in the editor!  Generation at Runtime can be disabled/enabled.
+6.  Recommended: Keep the `HideSource` parameter enabled to automatically hide the original `MeshInstance3D` nodes.
 
 ## About
 
