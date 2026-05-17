@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cqow47bch5ocs"]
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
 
 [ext_resource type="Script" uid="uid://1uqmmgd56dsf" path="res://addons/mergingmeshes/MergingMeshes.gd" id="1_yqqkq"]
 [ext_resource type="Texture2D" uid="uid://c6kp1w510ofmo" path="res://addons/mergingmeshes/demo/texture.jpg" id="2_hc20j"]
@@ -15,9 +15,6 @@ sky_material = SubResource("ProceduralSkyMaterial_ig7tw")
 background_mode = 2
 sky = SubResource("Sky_0xm2m")
 tonemap_mode = 2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yqqkq"]
-albedo_color = Color(1, 0.286275, 0, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pc2h3"]
 albedo_texture = ExtResource("2_hc20j")
@@ -53,44 +50,43 @@ uv1_scale = Vector3(4, 1, 1)
 inner_radius = 0.325
 outer_radius = 0.625
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=1352365688]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=832249338]
 environment = SubResource("Environment_h2yge")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment" unique_id=813080458]
 transform = Transform3D(-0.656059, -0.542893, -0.524265, 0, -0.694658, 0.71934, -0.75471, 0.471929, 0.455737, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Camera3D" type="Camera3D" parent="WorldEnvironment"]
+[node name="Camera3D" type="Camera3D" parent="WorldEnvironment" unique_id=1066342361]
 transform = Transform3D(0.842001, -0.338756, 0.419856, 0, 0.778266, 0.627935, -0.539476, -0.528722, 0.655301, 1.0804, 1.94538, 1.90224)
 
-[node name="MegingMeshes" type="MeshInstance3D" parent="." node_paths=PackedStringArray("meshes")]
+[node name="MegingMeshes" type="Node3D" parent="." unique_id=1693349061 node_paths=PackedStringArray("meshes")]
 script = ExtResource("1_yqqkq")
 meshes = [NodePath("../MeshInstance3D"), NodePath("../MeshInstance3D2"), NodePath("../MeshInstance3D3"), NodePath("../MeshInstance3D4"), NodePath("../MeshInstance3D5")]
-GeneralMaterial = SubResource("StandardMaterial3D_yqqkq")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.14852, 0, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1022815820]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0845332, 0, 0)
 material_override = SubResource("StandardMaterial3D_pc2h3")
 mesh = SubResource("BoxMesh_ig7tw")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1451299855]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.566937, 0, 0)
 material_override = SubResource("StandardMaterial3D_hc20j")
 mesh = SubResource("CapsuleMesh_0xm2m")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=745325682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.198673, 0.68605, -1.0165)
 material_override = SubResource("StandardMaterial3D_8f5v5")
 mesh = SubResource("SphereMesh_h2yge")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=1496217851]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.63131, 0.68605, -1.60987)
 material_override = SubResource("StandardMaterial3D_7ufnd")
 mesh = SubResource("PrismMesh_1bvp3")
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=10699778]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.347708, -0.965097, 0.899758)
 material_override = SubResource("StandardMaterial3D_455qy")
 mesh = SubResource("TorusMesh_lquwl")
