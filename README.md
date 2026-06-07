@@ -35,6 +35,12 @@ This mini-add-on is a component of a [larger add-on](https://github.com/EmberNoG
 ## Did you like the high FPS?
 Consider **starring** this repository to make it easier for others to **find it**.
 
+---
+
+Thanks for your support!!! 🤗😋
+[![Star History Chart](https://app.repohistory.com/api/svg?repo=EmberNoGlow/Merging-Meshes-Godot&type=Date&background=0D1117&color=b5f862)](https://app.repohistory.com/star-history)
+
+
 Article on **[Dev.to](https://dev.to/embernoglow/optimize-your-godot-4-scenes-with-merging-meshes-4eib)**.
 
 Get on **[Asset Library](https://godotengine.org/asset-library/asset/4538)**.
